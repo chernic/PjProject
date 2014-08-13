@@ -1,4 +1,4 @@
-pjproject-2.2.1
+pjprojectC
 |-- COPYING
 |-- INSTALL.txt
 |-- Makefile
@@ -8,6 +8,7 @@ pjproject-2.2.1
 |-- aconfigure.ac
 |-- bb10-config.mak
 |-- build
+|   |-- cc-auto.mak
 |   |-- cc-auto.mak.in
 |   |-- cc-gcc.mak
 |   |-- cc-vc.mak
@@ -24,6 +25,7 @@ pjproject-2.2.1
 |   |-- m-powerpc.mak
 |   |-- m-sparc.mak
 |   |-- m-x86_64.mak
+|   |-- os-auto.mak
 |   |-- os-auto.mak.in
 |   |-- os-darwinos.mak
 |   |-- os-linux-kernel.mak
@@ -51,6 +53,7 @@ pjproject-2.2.1
 |       |-- pjproject-vs8-wm5-release-defaults.vsprops
 |       |-- pjproject-vs8-wm6-common-defaults.vsprops
 |       `-- pjproject-vs8-wm6-release-defaults.vsprops
+|-- build.mak
 |-- build.mak.in
 |-- build.symbian
 |   |-- 00.bat
@@ -94,6 +97,8 @@ pjproject-2.2.1
 |   `-- symsndtest.pkg
 |-- c++-build.mak
 |-- config.guess
+|-- config.log
+|-- config.status
 |-- config.sub
 |-- configure
 |-- configure-android
@@ -133,6 +138,7 @@ pjproject-2.2.1
 |   |-- build
 |   |   |-- Makefile
 |   |   |-- cacert.pem
+|   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-darwinos.mak
 |   |   |-- os-linux-kernel.mak
@@ -174,6 +180,7 @@ pjproject-2.2.1
 |   |   |   |   |-- high_precision.h
 |   |   |   |   |-- m_alpha.h
 |   |   |   |   |-- m_armv4.h
+|   |   |   |   |-- m_auto.h
 |   |   |   |   |-- m_auto.h.in
 |   |   |   |   |-- m_i386.h
 |   |   |   |   |-- m_m68k.h
@@ -181,6 +188,7 @@ pjproject-2.2.1
 |   |   |   |   |-- m_sparc.h
 |   |   |   |   |-- m_x86_64.h
 |   |   |   |   |-- malloc.h
+|   |   |   |   |-- os_auto.h
 |   |   |   |   |-- os_auto.h.in
 |   |   |   |   |-- os_darwinos.h
 |   |   |   |   |-- os_linux.h
@@ -405,6 +413,7 @@ pjproject-2.2.1
 |   |-- bin
 |   |-- build
 |   |   |-- Makefile
+|   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-rtems.mak
 |   |   |-- output
@@ -503,6 +512,7 @@ pjproject-2.2.1
 |   |   |-- Makefile
 |   |   |-- m-i386.mak
 |   |   |-- m-x86_64.mak
+|   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-darwinos.mak
 |   |   |-- os-linux.mak
@@ -544,6 +554,7 @@ pjproject-2.2.1
 |   |   |   |-- codec.h
 |   |   |   |-- conference.h
 |   |   |   |-- config.h
+|   |   |   |-- config_auto.h
 |   |   |   |-- config_auto.h.in
 |   |   |   |-- converter.h
 |   |   |   |-- delaybuf.h
@@ -606,6 +617,7 @@ pjproject-2.2.1
 |   |   |   |-- amr_sdp_match.h
 |   |   |   |-- audio_codecs.h
 |   |   |   |-- config.h
+|   |   |   |-- config_auto.h
 |   |   |   |-- config_auto.h.in
 |   |   |   |-- ffmpeg_vid_codecs.h
 |   |   |   |-- g722.h
@@ -867,6 +879,7 @@ pjproject-2.2.1
 |   |-- bin
 |   |-- build
 |   |   |-- Makefile
+|   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-rtems.mak
 |   |   |-- output
@@ -902,6 +915,7 @@ pjproject-2.2.1
 |   |   |   |-- sip_auth_aka.h
 |   |   |   |-- sip_auth_msg.h
 |   |   |   |-- sip_auth_parser.h
+|   |   |   |-- sip_autoconf.h
 |   |   |   |-- sip_autoconf.h.in
 |   |   |   |-- sip_config.h
 |   |   |   |-- sip_dialog.h
@@ -1770,6 +1784,7 @@ pjproject-2.2.1
 |   |   |   |-- libmilenage.vcp
 |   |   |   |-- libmilenage.vcproj
 |   |   |   `-- output
+|   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-darwinos.mak
 |   |   |-- os-linux.mak
@@ -1778,6 +1793,7 @@ pjproject-2.2.1
 |   |   |   |-- Makefile
 |   |   |   |-- libportaudio.vcp
 |   |   |   |-- libportaudio.vcproj
+|   |   |   |-- os-auto.mak
 |   |   |   |-- os-auto.mak.in
 |   |   |   |-- os-linux.mak
 |   |   |   |-- output
@@ -2399,4 +2415,4 @@ pjproject-2.2.1
 |-- user.mak.sample
 `-- version.mak
 
-296 directories, 2103 files
+296 directories, 2119 files
