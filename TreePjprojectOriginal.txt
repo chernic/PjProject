@@ -1,4 +1,4 @@
-pjprojectCMakeDep/
+pjprojectCMDMake/
 |-- COPYING
 |-- INSTALL.txt
 |-- Makefile
@@ -135,6 +135,7 @@ pjprojectCMakeDep/
 |-- libpjproject.pc.in
 |-- pjlib
 |   |-- bin
+|   |   `-- pjlib-test-i686-pc-linux-gnu
 |   |-- build
 |   |   |-- Makefile
 |   |   |-- cacert.pem
@@ -147,6 +148,85 @@ pjprojectCMakeDep/
 |   |   |-- os-sunos.mak
 |   |   |-- os-win32.mak
 |   |   |-- output
+|   |   |   |-- pjlib-i686-pc-linux-gnu
+|   |   |   |   |-- activesock.o
+|   |   |   |   |-- addr_resolv_sock.o
+|   |   |   |   |-- array.o
+|   |   |   |   |-- config.o
+|   |   |   |   |-- ctype.o
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- except.o
+|   |   |   |   |-- fifobuf.o
+|   |   |   |   |-- file_access_unistd.o
+|   |   |   |   |-- file_io_ansi.o
+|   |   |   |   |-- guid.o
+|   |   |   |   |-- guid_uuid.o
+|   |   |   |   |-- hash.o
+|   |   |   |   |-- ioqueue_select.o
+|   |   |   |   |-- ip_helper_generic.o
+|   |   |   |   |-- list.o
+|   |   |   |   |-- lock.o
+|   |   |   |   |-- log.o
+|   |   |   |   |-- log_writer_stdout.o
+|   |   |   |   |-- os_core_unix.o
+|   |   |   |   |-- os_error_unix.o
+|   |   |   |   |-- os_info.o
+|   |   |   |   |-- os_time_common.o
+|   |   |   |   |-- os_time_unix.o
+|   |   |   |   |-- os_timestamp_common.o
+|   |   |   |   |-- os_timestamp_posix.o
+|   |   |   |   |-- pool.o
+|   |   |   |   |-- pool_buf.o
+|   |   |   |   |-- pool_caching.o
+|   |   |   |   |-- pool_dbg.o
+|   |   |   |   |-- pool_policy_malloc.o
+|   |   |   |   |-- rand.o
+|   |   |   |   |-- rbtree.o
+|   |   |   |   |-- sock_bsd.o
+|   |   |   |   |-- sock_common.o
+|   |   |   |   |-- sock_qos_bsd.o
+|   |   |   |   |-- sock_qos_common.o
+|   |   |   |   |-- sock_select.o
+|   |   |   |   |-- ssl_sock_common.o
+|   |   |   |   |-- ssl_sock_dump.o
+|   |   |   |   |-- ssl_sock_ossl.o
+|   |   |   |   |-- string.o
+|   |   |   |   |-- timer.o
+|   |   |   |   `-- types.o
+|   |   |   `-- pjlib-test-i686-pc-linux-gnu
+|   |   |       |-- activesock.o
+|   |   |       |-- atomic.o
+|   |   |       |-- echo_clt.o
+|   |   |       |-- errno.o
+|   |   |       |-- exception.o
+|   |   |       |-- fifobuf.o
+|   |   |       |-- file.o
+|   |   |       |-- hash_test.o
+|   |   |       |-- ioq_perf.o
+|   |   |       |-- ioq_tcp.o
+|   |   |       |-- ioq_udp.o
+|   |   |       |-- ioq_unreg.o
+|   |   |       |-- list.o
+|   |   |       |-- main.o
+|   |   |       |-- mutex.o
+|   |   |       |-- os.o
+|   |   |       |-- pool.o
+|   |   |       |-- pool_perf.o
+|   |   |       |-- rand.o
+|   |   |       |-- rbtree.o
+|   |   |       |-- select.o
+|   |   |       |-- sleep.o
+|   |   |       |-- sock.o
+|   |   |       |-- sock_perf.o
+|   |   |       |-- ssl_sock.o
+|   |   |       |-- string.o
+|   |   |       |-- test.o
+|   |   |       |-- thread.o
+|   |   |       |-- timer.o
+|   |   |       |-- timestamp.o
+|   |   |       |-- udp_echo_srv_ioqueue.o
+|   |   |       |-- udp_echo_srv_sync.o
+|   |   |       `-- util.o
 |   |   |-- pjlib.vcproj
 |   |   |-- pjlib_samples.mak
 |   |   |-- pjlib_test.vcproj
@@ -259,6 +339,7 @@ pjprojectCMakeDep/
 |   |   |-- pjlib++.hpp
 |   |   `-- pjlib.h
 |   |-- lib
+|   |   `-- libpj-i686-pc-linux-gnu.a
 |   `-- src
 |       |-- pj
 |       |   |-- activesock.c
@@ -412,12 +493,47 @@ pjprojectCMakeDep/
 |           `-- util.c
 |-- pjlib-util
 |   |-- bin
+|   |   `-- pjlib-util-test-i686-pc-linux-gnu
 |   |-- build
 |   |   |-- Makefile
 |   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-rtems.mak
 |   |   |-- output
+|   |   |   |-- pjlib-util-i686-pc-linux-gnu
+|   |   |   |   |-- base64.o
+|   |   |   |   |-- cli.o
+|   |   |   |   |-- cli_console.o
+|   |   |   |   |-- cli_telnet.o
+|   |   |   |   |-- crc32.o
+|   |   |   |   |-- dns.o
+|   |   |   |   |-- dns_dump.o
+|   |   |   |   |-- dns_server.o
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- getopt.o
+|   |   |   |   |-- hmac_md5.o
+|   |   |   |   |-- hmac_sha1.o
+|   |   |   |   |-- http_client.o
+|   |   |   |   |-- json.o
+|   |   |   |   |-- md5.o
+|   |   |   |   |-- pcap.o
+|   |   |   |   |-- resolver.o
+|   |   |   |   |-- scanner.o
+|   |   |   |   |-- sha1.o
+|   |   |   |   |-- srv_resolver.o
+|   |   |   |   |-- string.o
+|   |   |   |   |-- stun_simple.o
+|   |   |   |   |-- stun_simple_client.o
+|   |   |   |   `-- xml.o
+|   |   |   `-- pjlib-util-test-i686-pc-linux-gnu
+|   |   |       |-- encryption.o
+|   |   |       |-- http_client.o
+|   |   |       |-- json_test.o
+|   |   |       |-- main.o
+|   |   |       |-- resolver_test.o
+|   |   |       |-- stun.o
+|   |   |       |-- test.o
+|   |   |       `-- xml.o
 |   |   |-- pjlib_util.dsw
 |   |   |-- pjlib_util.vcproj
 |   |   |-- pjlib_util_test.vcproj
@@ -462,6 +578,7 @@ pjprojectCMakeDep/
 |   |   |   `-- xml.h
 |   |   `-- pjlib-util.h
 |   |-- lib
+|   |   `-- libpjlib-util-i686-pc-linux-gnu.a
 |   `-- src
 |       |-- pjlib-util
 |       |   |-- base64.c
@@ -508,6 +625,7 @@ pjprojectCMakeDep/
 |-- pjmedia
 |   |-- README.txt
 |   |-- bin
+|   |   `-- pjmedia-test-i686-pc-linux-gnu
 |   |-- build
 |   |   |-- Jbtest.dat
 |   |   |-- Makefile
@@ -520,6 +638,128 @@ pjprojectCMakeDep/
 |   |   |-- os-rtems.mak
 |   |   |-- os-win32.mak
 |   |   |-- output
+|   |   |   |-- pjmedia-audiodev-i686-pc-linux-gnu
+|   |   |   |   |-- alsa_dev.o
+|   |   |   |   |-- android_jni_dev.o
+|   |   |   |   |-- audiodev.o
+|   |   |   |   |-- audiotest.o
+|   |   |   |   |-- bb10_dev.o
+|   |   |   |   |-- bdimad_dev.o
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- legacy_dev.o
+|   |   |   |   |-- null_dev.o
+|   |   |   |   |-- opensl_dev.o
+|   |   |   |   |-- pa_dev.o
+|   |   |   |   `-- wmme_dev.o
+|   |   |   |-- pjmedia-codec-i686-pc-linux-gnu
+|   |   |   |   |-- amr_sdp_match.o
+|   |   |   |   |-- audio_codecs.o
+|   |   |   |   |-- ffmpeg_vid_codecs.o
+|   |   |   |   |-- g722
+|   |   |   |   |   |-- g722_dec.o
+|   |   |   |   |   `-- g722_enc.o
+|   |   |   |   |-- g722.o
+|   |   |   |   |-- g7221.o
+|   |   |   |   |-- g7221_sdp_match.o
+|   |   |   |   |-- gsm.o
+|   |   |   |   |-- h263_packetizer.o
+|   |   |   |   |-- h264_packetizer.o
+|   |   |   |   |-- ilbc.o
+|   |   |   |   |-- ipp_codecs.o
+|   |   |   |   |-- l16.o
+|   |   |   |   |-- opencore_amr.o
+|   |   |   |   |-- silk.o
+|   |   |   |   `-- speex_codec.o
+|   |   |   |-- pjmedia-i686-pc-linux-gnu
+|   |   |   |   |-- alaw_ulaw.o
+|   |   |   |   |-- alaw_ulaw_table.o
+|   |   |   |   |-- avi_player.o
+|   |   |   |   |-- bidirectional.o
+|   |   |   |   |-- clock_thread.o
+|   |   |   |   |-- codec.o
+|   |   |   |   |-- conf_switch.o
+|   |   |   |   |-- conference.o
+|   |   |   |   |-- converter.o
+|   |   |   |   |-- converter_libswscale.o
+|   |   |   |   |-- delaybuf.o
+|   |   |   |   |-- echo_common.o
+|   |   |   |   |-- echo_port.o
+|   |   |   |   |-- echo_speex.o
+|   |   |   |   |-- echo_suppress.o
+|   |   |   |   |-- endpoint.o
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- event.o
+|   |   |   |   |-- ffmpeg_util.o
+|   |   |   |   |-- format.o
+|   |   |   |   |-- g711.o
+|   |   |   |   |-- jbuf.o
+|   |   |   |   |-- master_port.o
+|   |   |   |   |-- mem_capture.o
+|   |   |   |   |-- mem_player.o
+|   |   |   |   |-- null_port.o
+|   |   |   |   |-- plc_common.o
+|   |   |   |   |-- port.o
+|   |   |   |   |-- resample_libsamplerate.o
+|   |   |   |   |-- resample_port.o
+|   |   |   |   |-- resample_resample.o
+|   |   |   |   |-- resample_speex.o
+|   |   |   |   |-- rtcp.o
+|   |   |   |   |-- rtcp_xr.o
+|   |   |   |   |-- rtp.o
+|   |   |   |   |-- sdp.o
+|   |   |   |   |-- sdp_cmp.o
+|   |   |   |   |-- sdp_neg.o
+|   |   |   |   |-- session.o
+|   |   |   |   |-- silencedet.o
+|   |   |   |   |-- sound_legacy.o
+|   |   |   |   |-- sound_port.o
+|   |   |   |   |-- splitcomb.o
+|   |   |   |   |-- stereo_port.o
+|   |   |   |   |-- stream.o
+|   |   |   |   |-- stream_common.o
+|   |   |   |   |-- stream_info.o
+|   |   |   |   |-- tonegen.o
+|   |   |   |   |-- transport_adapter_sample.o
+|   |   |   |   |-- transport_ice.o
+|   |   |   |   |-- transport_loop.o
+|   |   |   |   |-- transport_srtp.o
+|   |   |   |   |-- transport_udp.o
+|   |   |   |   |-- types.o
+|   |   |   |   |-- vid_codec.o
+|   |   |   |   |-- vid_codec_util.o
+|   |   |   |   |-- vid_port.o
+|   |   |   |   |-- vid_stream.o
+|   |   |   |   |-- vid_stream_info.o
+|   |   |   |   |-- vid_tee.o
+|   |   |   |   |-- wav_player.o
+|   |   |   |   |-- wav_playlist.o
+|   |   |   |   |-- wav_writer.o
+|   |   |   |   |-- wave.o
+|   |   |   |   `-- wsola.o
+|   |   |   |-- pjmedia-test-i686-pc-linux-gnu
+|   |   |   |   |-- codec_vectors.o
+|   |   |   |   |-- jbuf_test.o
+|   |   |   |   |-- main.o
+|   |   |   |   |-- mips_test.o
+|   |   |   |   |-- rtp_test.o
+|   |   |   |   |-- sdp_neg_test.o
+|   |   |   |   |-- test.o
+|   |   |   |   |-- vid_codec_test.o
+|   |   |   |   |-- vid_dev_test.o
+|   |   |   |   `-- vid_port_test.o
+|   |   |   |-- pjmedia-videodev-i686-pc-linux-gnu
+|   |   |   |   |-- avi_dev.o
+|   |   |   |   |-- colorbar_dev.o
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- ffmpeg_dev.o
+|   |   |   |   |-- sdl_dev.o
+|   |   |   |   |-- v4l2_dev.o
+|   |   |   |   `-- videodev.o
+|   |   |   `-- pjsdp-i686-pc-linux-gnu
+|   |   |       |-- errno.o
+|   |   |       |-- sdp.o
+|   |   |       |-- sdp_cmp.o
+|   |   |       `-- sdp_neg.o
 |   |   |-- pjmedia.vcproj
 |   |   |-- pjmedia_audiodev.vcproj
 |   |   |-- pjmedia_codec.vcproj
@@ -646,6 +886,11 @@ pjprojectCMakeDep/
 |   |   |-- pjmedia_audiodev.h
 |   |   `-- pjmedia_videodev.h
 |   |-- lib
+|   |   |-- libpjmedia-audiodev-i686-pc-linux-gnu.a
+|   |   |-- libpjmedia-codec-i686-pc-linux-gnu.a
+|   |   |-- libpjmedia-i686-pc-linux-gnu.a
+|   |   |-- libpjmedia-videodev-i686-pc-linux-gnu.a
+|   |   `-- libpjsdp-i686-pc-linux-gnu.a
 |   `-- src
 |       |-- pjmedia
 |       |   |-- alaw_ulaw.c
@@ -790,9 +1035,44 @@ pjprojectCMakeDep/
 |           `-- wsola_test.c
 |-- pjnath
 |   |-- bin
+|   |   |-- pjnath-test-i686-pc-linux-gnu
+|   |   |-- pjturn-client-i686-pc-linux-gnu
+|   |   `-- pjturn-srv-i686-pc-linux-gnu
 |   |-- build
 |   |   |-- Makefile
 |   |   |-- output
+|   |   |   |-- pjnath-i686-pc-linux-gnu
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- ice_session.o
+|   |   |   |   |-- ice_strans.o
+|   |   |   |   |-- nat_detect.o
+|   |   |   |   |-- stun_auth.o
+|   |   |   |   |-- stun_msg.o
+|   |   |   |   |-- stun_msg_dump.o
+|   |   |   |   |-- stun_session.o
+|   |   |   |   |-- stun_sock.o
+|   |   |   |   |-- stun_transaction.o
+|   |   |   |   |-- turn_session.o
+|   |   |   |   `-- turn_sock.o
+|   |   |   |-- pjnath-test-i686-pc-linux-gnu
+|   |   |   |   |-- concur_test.o
+|   |   |   |   |-- ice_test.o
+|   |   |   |   |-- main.o
+|   |   |   |   |-- server.o
+|   |   |   |   |-- sess_auth.o
+|   |   |   |   |-- stun.o
+|   |   |   |   |-- stun_sock_test.o
+|   |   |   |   |-- test.o
+|   |   |   |   `-- turn_sock_test.o
+|   |   |   |-- pjturn-client-i686-pc-linux-gnu
+|   |   |   |   `-- client_main.o
+|   |   |   `-- pjturn-srv-i686-pc-linux-gnu
+|   |   |       |-- allocation.o
+|   |   |       |-- auth.o
+|   |   |       |-- listener_tcp.o
+|   |   |       |-- listener_udp.o
+|   |   |       |-- main.o
+|   |   |       `-- server.o
 |   |   |-- pjnath.vcproj
 |   |   |-- pjnath_test.vcproj
 |   |   |-- pjstun_srv_test.vcproj
@@ -837,6 +1117,7 @@ pjprojectCMakeDep/
 |   |   |   `-- types.h
 |   |   `-- pjnath.h
 |   |-- lib
+|   |   `-- libpjnath-i686-pc-linux-gnu.a
 |   `-- src
 |       |-- pjnath
 |       |   |-- errno.c
@@ -878,12 +1159,102 @@ pjprojectCMakeDep/
 |-- pjproject-vs8.sln
 |-- pjsip
 |   |-- bin
+|   |   |-- pjsip-test-i686-pc-linux-gnu
+|   |   `-- pjsua2-test-i686-pc-linux-gnu
 |   |-- build
 |   |   |-- Makefile
 |   |   |-- os-auto.mak
 |   |   |-- os-auto.mak.in
 |   |   |-- os-rtems.mak
 |   |   |-- output
+|   |   |   |-- pjsip-i686-pc-linux-gnu
+|   |   |   |   |-- sip_auth_aka.o
+|   |   |   |   |-- sip_auth_client.o
+|   |   |   |   |-- sip_auth_msg.o
+|   |   |   |   |-- sip_auth_parser.o
+|   |   |   |   |-- sip_auth_server.o
+|   |   |   |   |-- sip_config.o
+|   |   |   |   |-- sip_dialog.o
+|   |   |   |   |-- sip_endpoint.o
+|   |   |   |   |-- sip_errno.o
+|   |   |   |   |-- sip_msg.o
+|   |   |   |   |-- sip_multipart.o
+|   |   |   |   |-- sip_parser.o
+|   |   |   |   |-- sip_resolve.o
+|   |   |   |   |-- sip_tel_uri.o
+|   |   |   |   |-- sip_transaction.o
+|   |   |   |   |-- sip_transport.o
+|   |   |   |   |-- sip_transport_loop.o
+|   |   |   |   |-- sip_transport_tcp.o
+|   |   |   |   |-- sip_transport_tls.o
+|   |   |   |   |-- sip_transport_udp.o
+|   |   |   |   |-- sip_ua_layer.o
+|   |   |   |   |-- sip_uri.o
+|   |   |   |   |-- sip_util.o
+|   |   |   |   |-- sip_util_proxy.o
+|   |   |   |   `-- sip_util_statefull.o
+|   |   |   |-- pjsip-simple-i686-pc-linux-gnu
+|   |   |   |   |-- errno.o
+|   |   |   |   |-- evsub.o
+|   |   |   |   |-- evsub_msg.o
+|   |   |   |   |-- iscomposing.o
+|   |   |   |   |-- mwi.o
+|   |   |   |   |-- pidf.o
+|   |   |   |   |-- presence.o
+|   |   |   |   |-- presence_body.o
+|   |   |   |   |-- publishc.o
+|   |   |   |   |-- rpid.o
+|   |   |   |   `-- xpidf.o
+|   |   |   |-- pjsip-test-i686-pc-linux-gnu
+|   |   |   |   |-- dlg_core_test.o
+|   |   |   |   |-- dns_test.o
+|   |   |   |   |-- inv_offer_answer_test.o
+|   |   |   |   |-- main.o
+|   |   |   |   |-- msg_err_test.o
+|   |   |   |   |-- msg_logger.o
+|   |   |   |   |-- msg_test.o
+|   |   |   |   |-- multipart_test.o
+|   |   |   |   |-- regc_test.o
+|   |   |   |   |-- test.o
+|   |   |   |   |-- transport_loop_test.o
+|   |   |   |   |-- transport_tcp_test.o
+|   |   |   |   |-- transport_test.o
+|   |   |   |   |-- transport_udp_test.o
+|   |   |   |   |-- tsx_basic_test.o
+|   |   |   |   |-- tsx_bench.o
+|   |   |   |   |-- tsx_uac_test.o
+|   |   |   |   |-- tsx_uas_test.o
+|   |   |   |   |-- txdata_test.o
+|   |   |   |   `-- uri_test.o
+|   |   |   |-- pjsip-ua-i686-pc-linux-gnu
+|   |   |   |   |-- sip_100rel.o
+|   |   |   |   |-- sip_inv.o
+|   |   |   |   |-- sip_reg.o
+|   |   |   |   |-- sip_replaces.o
+|   |   |   |   |-- sip_timer.o
+|   |   |   |   `-- sip_xfer.o
+|   |   |   |-- pjsua-lib-i686-pc-linux-gnu
+|   |   |   |   |-- pjsua_acc.o
+|   |   |   |   |-- pjsua_aud.o
+|   |   |   |   |-- pjsua_call.o
+|   |   |   |   |-- pjsua_core.o
+|   |   |   |   |-- pjsua_dump.o
+|   |   |   |   |-- pjsua_im.o
+|   |   |   |   |-- pjsua_media.o
+|   |   |   |   |-- pjsua_pres.o
+|   |   |   |   `-- pjsua_vid.o
+|   |   |   |-- pjsua2-lib-i686-pc-linux-gnu
+|   |   |   |   |-- account.o
+|   |   |   |   |-- call.o
+|   |   |   |   |-- endpoint.o
+|   |   |   |   |-- json.o
+|   |   |   |   |-- media.o
+|   |   |   |   |-- persistent.o
+|   |   |   |   |-- presence.o
+|   |   |   |   |-- siptypes.o
+|   |   |   |   `-- types.o
+|   |   |   `-- pjsua2-test-i686-pc-linux-gnu
+|   |   |       `-- main.o
 |   |   |-- pjsip_core.vcproj
 |   |   |-- pjsip_simple.vcproj
 |   |   |-- pjsip_test.vcproj
@@ -981,6 +1352,11 @@ pjprojectCMakeDep/
 |   |   |   `-- types.hpp
 |   |   `-- pjsua2.hpp
 |   |-- lib
+|   |   |-- libpjsip-i686-pc-linux-gnu.a
+|   |   |-- libpjsip-simple-i686-pc-linux-gnu.a
+|   |   |-- libpjsip-ua-i686-pc-linux-gnu.a
+|   |   |-- libpjsua-i686-pc-linux-gnu.a
+|   |   `-- libpjsua2-i686-pc-linux-gnu.a
 |   `-- src
 |       |-- pjsip
 |       |   |-- sip_auth_aka.c
@@ -1084,7 +1460,41 @@ pjprojectCMakeDep/
 |           `-- uri_test.c
 |-- pjsip-apps
 |   |-- bin
+|   |   |-- pjsua-i686-pc-linux-gnu
+|   |   |-- pjsystest-i686-pc-linux-gnu
 |   |   `-- samples
+|   |       `-- i686-pc-linux-gnu
+|   |           |-- aectest
+|   |           |-- auddemo
+|   |           |-- aviplay
+|   |           |-- clidemo
+|   |           |-- confsample
+|   |           |-- encdec
+|   |           |-- httpdemo
+|   |           |-- icedemo
+|   |           |-- jbsim
+|   |           |-- latency
+|   |           |-- level
+|   |           |-- mix
+|   |           |-- pcaputil
+|   |           |-- pjsip-perf
+|   |           |-- pjsua2_demo
+|   |           |-- playfile
+|   |           |-- playsine
+|   |           |-- recfile
+|   |           |-- resampleplay
+|   |           |-- simple_pjsua
+|   |           |-- simpleua
+|   |           |-- sipecho
+|   |           |-- siprtp
+|   |           |-- sipstateless
+|   |           |-- stateful_proxy
+|   |           |-- stateless_proxy
+|   |           |-- stereotest
+|   |           |-- streamutil
+|   |           |-- strerror
+|   |           |-- tonegen
+|   |           `-- vid_streamutil
 |   |-- build
 |   |   |-- Footprint.mak
 |   |   |-- Makefile
@@ -1095,6 +1505,49 @@ pjprojectCMakeDep/
 |   |   |-- libpjproject.vcproj
 |   |   |-- os-win32.mak
 |   |   |-- output
+|   |   |   |-- pjsua-i686-pc-linux-gnu
+|   |   |   |   |-- main.o
+|   |   |   |   |-- pjsua_app.o
+|   |   |   |   |-- pjsua_app_cli.o
+|   |   |   |   |-- pjsua_app_common.o
+|   |   |   |   |-- pjsua_app_config.o
+|   |   |   |   `-- pjsua_app_legacy.o
+|   |   |   |-- pjsua2_sample-i686-pc-linux-gnu
+|   |   |   |   `-- pjsua2_demo.o
+|   |   |   |-- pjsystest-i686-pc-linux-gnu
+|   |   |   |   |-- main_console.o
+|   |   |   |   `-- systest.o
+|   |   |   `-- sample-i686-pc-linux-gnu
+|   |   |       |-- aectest.o
+|   |   |       |-- auddemo.o
+|   |   |       |-- aviplay.o
+|   |   |       |-- clidemo.o
+|   |   |       |-- confsample.o
+|   |   |       |-- encdec.o
+|   |   |       |-- httpdemo.o
+|   |   |       |-- icedemo.o
+|   |   |       |-- jbsim.o
+|   |   |       |-- latency.o
+|   |   |       |-- level.o
+|   |   |       |-- mix.o
+|   |   |       |-- pcaputil.o
+|   |   |       |-- pjsip-perf.o
+|   |   |       |-- playfile.o
+|   |   |       |-- playsine.o
+|   |   |       |-- recfile.o
+|   |   |       |-- resampleplay.o
+|   |   |       |-- simple_pjsua.o
+|   |   |       |-- simpleua.o
+|   |   |       |-- sipecho.o
+|   |   |       |-- siprtp.o
+|   |   |       |-- sipstateless.o
+|   |   |       |-- stateful_proxy.o
+|   |   |       |-- stateless_proxy.o
+|   |   |       |-- stereotest.o
+|   |   |       |-- streamutil.o
+|   |   |       |-- strerror.o
+|   |   |       |-- tonegen.o
+|   |   |       `-- vid_streamutil.o
 |   |   |-- pjsua.vcproj
 |   |   |-- pjsystest.vcproj
 |   |   |-- py_pjsua.vcproj
@@ -1769,17 +2222,72 @@ pjprojectCMakeDep/
 |   |   |   |-- Makefile
 |   |   |   |-- libg7221codec.vcproj
 |   |   |   `-- output
+|   |   |       `-- libg7221codec-i686-pc-linux-gnu
+|   |   |           |-- common
+|   |   |           |   |-- basic_op.o
+|   |   |           |   |-- common.o
+|   |   |           |   |-- huff_tab.o
+|   |   |           |   `-- tables.o
+|   |   |           |-- decode
+|   |   |           |   |-- coef2sam.o
+|   |   |           |   |-- dct4_s.o
+|   |   |           |   `-- decoder.o
+|   |   |           `-- encode
+|   |   |               |-- dct4_a.o
+|   |   |               |-- encoder.o
+|   |   |               `-- sam2coef.o
 |   |   |-- gsm
 |   |   |   |-- Makefile
 |   |   |   |-- config.h
 |   |   |   |-- libgsmcodec.vcp
 |   |   |   |-- libgsmcodec.vcproj
 |   |   |   `-- output
+|   |   |       `-- libgsmcodec-i686-pc-linux-gnu
+|   |   |           |-- add.o
+|   |   |           |-- code.o
+|   |   |           |-- decode.o
+|   |   |           |-- gsm_create.o
+|   |   |           |-- gsm_decode.o
+|   |   |           |-- gsm_destroy.o
+|   |   |           |-- gsm_encode.o
+|   |   |           |-- gsm_explode.o
+|   |   |           |-- gsm_implode.o
+|   |   |           |-- gsm_option.o
+|   |   |           |-- long_term.o
+|   |   |           |-- lpc.o
+|   |   |           |-- preprocess.o
+|   |   |           |-- rpe.o
+|   |   |           |-- short_term.o
+|   |   |           `-- table.o
 |   |   |-- ilbc
 |   |   |   |-- Makefile
 |   |   |   |-- libilbccodec.vcp
 |   |   |   |-- libilbccodec.vcproj
 |   |   |   `-- output
+|   |   |       `-- libilbccodec-i686-pc-linux-gnu
+|   |   |           |-- FrameClassify.o
+|   |   |           |-- LPCdecode.o
+|   |   |           |-- LPCencode.o
+|   |   |           |-- StateConstructW.o
+|   |   |           |-- StateSearchW.o
+|   |   |           |-- anaFilter.o
+|   |   |           |-- constants.o
+|   |   |           |-- createCB.o
+|   |   |           |-- doCPLC.o
+|   |   |           |-- enhancer.o
+|   |   |           |-- filter.o
+|   |   |           |-- gainquant.o
+|   |   |           |-- getCBvec.o
+|   |   |           |-- helpfun.o
+|   |   |           |-- hpInput.o
+|   |   |           |-- hpOutput.o
+|   |   |           |-- iCBConstruct.o
+|   |   |           |-- iCBSearch.o
+|   |   |           |-- iLBC_decode.o
+|   |   |           |-- iLBC_encode.o
+|   |   |           |-- lsf.o
+|   |   |           |-- packing.o
+|   |   |           `-- syntFilter.o
 |   |   |-- milenage
 |   |   |   |-- Makefile
 |   |   |   |-- libmilenage.vcp
@@ -1798,6 +2306,20 @@ pjprojectCMakeDep/
 |   |   |   |-- os-auto.mak.in
 |   |   |   |-- os-linux.mak
 |   |   |   |-- output
+|   |   |   |   `-- libportaudio-i686-pc-linux-gnu
+|   |   |   |       |-- pa_allocation.o
+|   |   |   |       |-- pa_converters.o
+|   |   |   |       |-- pa_cpuload.o
+|   |   |   |       |-- pa_debugprint.o
+|   |   |   |       |-- pa_dither.o
+|   |   |   |       |-- pa_front.o
+|   |   |   |       |-- pa_process.o
+|   |   |   |       |-- pa_skeleton.o
+|   |   |   |       |-- pa_stream.o
+|   |   |   |       |-- pa_trace.o
+|   |   |   |       |-- pa_unix_hostapis.o
+|   |   |   |       |-- pa_unix_oss.o
+|   |   |   |       `-- pa_unix_util.o
 |   |   |   `-- src
 |   |   |       |-- pa_allocation.c
 |   |   |       |-- pa_allocation.h
@@ -1852,6 +2374,8 @@ pjprojectCMakeDep/
 |   |   |   |-- libresample.vcproj
 |   |   |   |-- libresample_dll.vcproj
 |   |   |   `-- output
+|   |   |       `-- libresample-i686-pc-linux-gnu
+|   |   |           `-- resamplesubs.o
 |   |   |-- samplerate
 |   |   |   |-- README.txt
 |   |   |   |-- Static.msvc
@@ -1863,6 +2387,45 @@ pjprojectCMakeDep/
 |   |   |   |-- libspeex.vcp
 |   |   |   |-- libspeex.vcproj
 |   |   |   |-- output
+|   |   |   |   `-- libspeex-i686-pc-linux-gnu
+|   |   |   |       |-- bits.o
+|   |   |   |       |-- cb_search.o
+|   |   |   |       |-- exc_10_16_table.o
+|   |   |   |       |-- exc_10_32_table.o
+|   |   |   |       |-- exc_20_32_table.o
+|   |   |   |       |-- exc_5_256_table.o
+|   |   |   |       |-- exc_5_64_table.o
+|   |   |   |       |-- exc_8_128_table.o
+|   |   |   |       |-- fftwrap.o
+|   |   |   |       |-- filterbank.o
+|   |   |   |       |-- filters.o
+|   |   |   |       |-- gain_table.o
+|   |   |   |       |-- gain_table_lbr.o
+|   |   |   |       |-- hexc_10_32_table.o
+|   |   |   |       |-- hexc_table.o
+|   |   |   |       |-- high_lsp_tables.o
+|   |   |   |       |-- kiss_fft.o
+|   |   |   |       |-- kiss_fftr.o
+|   |   |   |       |-- lpc.o
+|   |   |   |       |-- lsp.o
+|   |   |   |       |-- lsp_tables_nb.o
+|   |   |   |       |-- ltp.o
+|   |   |   |       |-- mdf.o
+|   |   |   |       |-- modes.o
+|   |   |   |       |-- modes_wb.o
+|   |   |   |       |-- nb_celp.o
+|   |   |   |       |-- preprocess.o
+|   |   |   |       |-- quant_lsp.o
+|   |   |   |       |-- resample.o
+|   |   |   |       |-- sb_celp.o
+|   |   |   |       |-- smallft.o
+|   |   |   |       |-- speex.o
+|   |   |   |       |-- speex_callbacks.o
+|   |   |   |       |-- speex_header.o
+|   |   |   |       |-- stereo.o
+|   |   |   |       |-- vbr.o
+|   |   |   |       |-- vq.o
+|   |   |   |       `-- window.o
 |   |   |   `-- speex
 |   |   |       `-- speex_config_types.h
 |   |   `-- srtp
@@ -1870,6 +2433,38 @@ pjprojectCMakeDep/
 |   |       |-- libsrtp.vcp
 |   |       |-- libsrtp.vcproj
 |   |       |-- output
+|   |       |   `-- libsrtp-i686-pc-linux-gnu
+|   |       |       |-- crypto
+|   |       |       |   |-- cipher
+|   |       |       |   |   |-- aes.o
+|   |       |       |   |   |-- aes_cbc.o
+|   |       |       |   |   |-- aes_icm.o
+|   |       |       |   |   |-- cipher.o
+|   |       |       |   |   `-- null_cipher.o
+|   |       |       |   |-- hash
+|   |       |       |   |   |-- auth.o
+|   |       |       |   |   |-- hmac.o
+|   |       |       |   |   |-- null_auth.o
+|   |       |       |   |   `-- sha1.o
+|   |       |       |   |-- kernel
+|   |       |       |   |   |-- alloc.o
+|   |       |       |   |   |-- crypto_kernel.o
+|   |       |       |   |   `-- key.o
+|   |       |       |   |-- math
+|   |       |       |   |   |-- datatypes.o
+|   |       |       |   |   `-- stat.o
+|   |       |       |   |-- replay
+|   |       |       |   |   |-- rdb.o
+|   |       |       |   |   |-- rdbx.o
+|   |       |       |   |   `-- ut_sim.o
+|   |       |       |   `-- rng
+|   |       |       |       |-- ctr_prng.o
+|   |       |       |       |-- prng.o
+|   |       |       |       `-- rand_source.o
+|   |       |       |-- pjlib
+|   |       |       |   `-- srtp_err.o
+|   |       |       `-- srtp
+|   |       |           `-- srtp.o
 |   |       `-- srtp_config.h
 |   |-- g7221
 |   |   |-- common
@@ -2014,6 +2609,13 @@ pjprojectCMakeDep/
 |   |   |-- syntFilter.c
 |   |   `-- syntFilter.h
 |   |-- lib
+|   |   |-- libg7221codec-i686-pc-linux-gnu.a
+|   |   |-- libgsmcodec-i686-pc-linux-gnu.a
+|   |   |-- libilbccodec-i686-pc-linux-gnu.a
+|   |   |-- libportaudio-i686-pc-linux-gnu.a
+|   |   |-- libresample-i686-pc-linux-gnu.a
+|   |   |-- libspeex-i686-pc-linux-gnu.a
+|   |   `-- libsrtp-i686-pc-linux-gnu.a
 |   |-- milenage
 |   |   |-- milenage.c
 |   |   |-- milenage.h
@@ -2416,4 +3018,4 @@ pjprojectCMakeDep/
 |-- user.mak.sample
 `-- version.mak
 
-296 directories, 2120 files
+342 directories, 2676 files
