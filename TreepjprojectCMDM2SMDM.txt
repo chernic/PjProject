@@ -1,4 +1,4 @@
-pjprojectCMDMake/
+pjprojectCSMDMake/
 |-- COPYING
 |-- INSTALL.txt
 |-- Makefile
@@ -339,7 +339,9 @@ pjprojectCMDMake/
 |   |   |-- pjlib++.hpp
 |   |   `-- pjlib.h
 |   |-- lib
-|   |   `-- libpj-i686-pc-linux-gnu.a
+|   |   |-- libpj-i686-pc-linux-gnu.a
+|   |   |-- libpj.so -> libpj.so.2
+|   |   `-- libpj.so.2
 |   `-- src
 |       |-- pj
 |       |   |-- activesock.c
@@ -578,7 +580,9 @@ pjprojectCMDMake/
 |   |   |   `-- xml.h
 |   |   `-- pjlib-util.h
 |   |-- lib
-|   |   `-- libpjlib-util-i686-pc-linux-gnu.a
+|   |   |-- libpjlib-util-i686-pc-linux-gnu.a
+|   |   |-- libpjlib-util.so -> libpjlib-util.so.2
+|   |   `-- libpjlib-util.so.2
 |   `-- src
 |       |-- pjlib-util
 |       |   |-- base64.c
@@ -887,10 +891,20 @@ pjprojectCMDMake/
 |   |   `-- pjmedia_videodev.h
 |   |-- lib
 |   |   |-- libpjmedia-audiodev-i686-pc-linux-gnu.a
+|   |   |-- libpjmedia-audiodev.so -> libpjmedia-audiodev.so.2
+|   |   |-- libpjmedia-audiodev.so.2
 |   |   |-- libpjmedia-codec-i686-pc-linux-gnu.a
+|   |   |-- libpjmedia-codec.so -> libpjmedia-codec.so.2
+|   |   |-- libpjmedia-codec.so.2
 |   |   |-- libpjmedia-i686-pc-linux-gnu.a
 |   |   |-- libpjmedia-videodev-i686-pc-linux-gnu.a
-|   |   `-- libpjsdp-i686-pc-linux-gnu.a
+|   |   |-- libpjmedia-videodev.so -> libpjmedia-videodev.so.2
+|   |   |-- libpjmedia-videodev.so.2
+|   |   |-- libpjmedia.so -> libpjmedia.so.2
+|   |   |-- libpjmedia.so.2
+|   |   |-- libpjsdp-i686-pc-linux-gnu.a
+|   |   |-- libpjsdp.so -> libpjsdp.so.2
+|   |   `-- libpjsdp.so.2
 |   `-- src
 |       |-- pjmedia
 |       |   |-- alaw_ulaw.c
@@ -1117,7 +1131,9 @@ pjprojectCMDMake/
 |   |   |   `-- types.h
 |   |   `-- pjnath.h
 |   |-- lib
-|   |   `-- libpjnath-i686-pc-linux-gnu.a
+|   |   |-- libpjnath-i686-pc-linux-gnu.a
+|   |   |-- libpjnath.so -> libpjnath.so.2
+|   |   `-- libpjnath.so.2
 |   `-- src
 |       |-- pjnath
 |       |   |-- errno.c
@@ -1354,9 +1370,19 @@ pjprojectCMDMake/
 |   |-- lib
 |   |   |-- libpjsip-i686-pc-linux-gnu.a
 |   |   |-- libpjsip-simple-i686-pc-linux-gnu.a
+|   |   |-- libpjsip-simple.so -> libpjsip-simple.so.2
+|   |   |-- libpjsip-simple.so.2
 |   |   |-- libpjsip-ua-i686-pc-linux-gnu.a
+|   |   |-- libpjsip-ua.so -> libpjsip-ua.so.2
+|   |   |-- libpjsip-ua.so.2
+|   |   |-- libpjsip.so -> libpjsip.so.2
+|   |   |-- libpjsip.so.2
 |   |   |-- libpjsua-i686-pc-linux-gnu.a
-|   |   `-- libpjsua2-i686-pc-linux-gnu.a
+|   |   |-- libpjsua.so -> libpjsua.so.2
+|   |   |-- libpjsua.so.2
+|   |   |-- libpjsua2-i686-pc-linux-gnu.a
+|   |   |-- libpjsua2.so -> libpjsua2.so.2
+|   |   `-- libpjsua2.so.2
 |   `-- src
 |       |-- pjsip
 |       |   |-- sip_auth_aka.c
@@ -2610,12 +2636,26 @@ pjprojectCMDMake/
 |   |   `-- syntFilter.h
 |   |-- lib
 |   |   |-- libg7221codec-i686-pc-linux-gnu.a
+|   |   |-- libg7221codec.so -> libg7221codec.so.2
+|   |   |-- libg7221codec.so.2
 |   |   |-- libgsmcodec-i686-pc-linux-gnu.a
+|   |   |-- libgsmcodec.so -> libgsmcodec.so.2
+|   |   |-- libgsmcodec.so.2
 |   |   |-- libilbccodec-i686-pc-linux-gnu.a
+|   |   |-- libilbccodec.so -> libilbccodec.so.2
+|   |   |-- libilbccodec.so.2
 |   |   |-- libportaudio-i686-pc-linux-gnu.a
+|   |   |-- libportaudio.so -> libportaudio.so.2
+|   |   |-- libportaudio.so.2
 |   |   |-- libresample-i686-pc-linux-gnu.a
+|   |   |-- libresample.so -> libresample.so.2
+|   |   |-- libresample.so.2
 |   |   |-- libspeex-i686-pc-linux-gnu.a
-|   |   `-- libsrtp-i686-pc-linux-gnu.a
+|   |   |-- libspeex.so -> libspeex.so.2
+|   |   |-- libspeex.so.2
+|   |   |-- libsrtp-i686-pc-linux-gnu.a
+|   |   |-- libsrtp.so -> libsrtp.so.2
+|   |   `-- libsrtp.so.2
 |   |-- milenage
 |   |   |-- milenage.c
 |   |   |-- milenage.h
@@ -3018,4 +3058,4 @@ pjprojectCMDMake/
 |-- user.mak.sample
 `-- version.mak
 
-342 directories, 2676 files
+342 directories, 2716 files

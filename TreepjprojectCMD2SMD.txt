@@ -1,4 +1,4 @@
-pjprojectCMakeDep/
+pjprojectCSMakeDep/
 |-- COPYING
 |-- INSTALL.txt
 |-- Makefile

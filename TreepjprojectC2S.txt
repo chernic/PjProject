@@ -1,4 +1,4 @@
-pjprojectC
+pjprojectCShared/
 |-- COPYING
 |-- INSTALL.txt
 |-- Makefile
